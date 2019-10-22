@@ -14,13 +14,11 @@ namespace Solution
                 else
                     dict.Add(s, 1);
             }
-
             foreach (var pair in dict)
                 if (pair.Value % 2 == 1)
                     return pair.Key;
 
             return -1;
         }
-
     }
 }
